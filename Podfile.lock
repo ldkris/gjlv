@@ -1,0 +1,83 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - BaiduMapKit (3.1.0)
+  - GTMBase64 (1.0.0)
+  - HappyDNS (0.3.10)
+  - HyphenateLite_CN (3.2.0)
+  - ImagePlayerView (2.0.2)
+  - JPush-iOS-SDK (2.2.0)
+  - Mantle (2.1.0):
+    - Mantle/extobjc (= 2.1.0)
+  - Mantle/extobjc (2.1.0)
+  - Masonry (1.0.2)
+  - MJRefresh (3.1.12)
+  - PopoverView (0.0.2)
+  - Qiniu (7.1.4):
+    - AFNetworking (~> 3)
+    - HappyDNS (~> 0.3)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SVProgressHUD (2.0.3)
+  - UMengUShare/Core (6.0.3):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.0.3)
+  - UMengUShare/Social/QQ (6.0.3):
+    - UMengUShare/Core
+  - UMengUShare/Social/WeChat (6.0.3):
+    - UMengUShare/Core
+  - UMengUShare/UI (6.0.3):
+    - UMengUShare/Core
+
+DEPENDENCIES:
+  - AFNetworking
+  - BaiduMapKit
+  - GTMBase64
+  - HyphenateLite_CN
+  - ImagePlayerView
+  - JPush-iOS-SDK
+  - Mantle
+  - Masonry
+  - MJRefresh
+  - PopoverView
+  - Qiniu
+  - SDWebImage
+  - SVProgressHUD
+  - UMengUShare/Social/QQ
+  - UMengUShare/Social/WeChat
+  - UMengUShare/UI
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BaiduMapKit: 4cfaedb118cff7e157e9771859a4bf65a261b2a1
+  GTMBase64: 0da7372e95f5171f3f652db38cde6716f8eb5e24
+  HappyDNS: 06a9fed2796663fd87626dbf02552933265bf059
+  HyphenateLite_CN: b1b023ca05b254f495924711158b3112abf37c04
+  ImagePlayerView: e162d73d3a1d427a43dc6a52d2c0baf4c7e226f8
+  JPush-iOS-SDK: 44ae7a71c04ff0b08031451d985993ece83acadf
+  Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  PopoverView: 62e83ffda75944d6cf2de9c6593489f3097dc1a3
+  Qiniu: a4c962782035ee25b9da3e195181d8c384bb75be
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  UMengUShare: f231fc086d789d4e560a5090dcc13a2db15c686d
+
+PODFILE CHECKSUM: 8506b58ba2ddd2efb87f200a64da111e5c6a3a78
+
+COCOAPODS: 1.0.1

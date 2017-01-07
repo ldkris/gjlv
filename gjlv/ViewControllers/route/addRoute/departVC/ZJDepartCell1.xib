@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="61" id="KWc-FT-SYJ" customClass="ZJDepartCell1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KWc-FT-SYJ" id="g9A-vH-IfI">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_head_def.png" translatesAutoresizingMaskIntoConstraints="NO" id="2uc-eR-9u9">
+                        <rect key="frame" x="8" y="5" width="51" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="2uc-eR-9u9" secondAttribute="height" multiplier="51:50" id="Tvo-tj-eCX"/>
+                            <constraint firstAttribute="height" constant="50" id="dMI-2a-Xe9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="桃领队" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8N-GN-tkd">
+                        <rect key="frame" x="67" y="10" width="46" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="234次" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L2f-oe-Vfm">
+                        <rect key="frame" x="113" y="13" width="35" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5r9-eQ-L0U">
+                        <rect key="frame" x="211" y="7.5" width="45" height="45"/>
+                        <state key="normal" image="ds_chat.png"/>
+                        <connections>
+                            <action selector="onclickChatBtn:" destination="KWc-FT-SYJ" eventType="touchUpInside" id="5N4-5i-css"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAW-ph-8k8">
+                        <rect key="frame" x="267" y="7.5" width="45" height="45"/>
+                        <state key="normal" image="ds_phone.png"/>
+                        <connections>
+                            <action selector="onclickCallBtn:" destination="KWc-FT-SYJ" eventType="touchUpInside" id="vU7-nY-2ll"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="2uc-eR-9u9" secondAttribute="bottom" constant="-2.5" id="5cx-b4-g6O"/>
+                    <constraint firstItem="L2f-oe-Vfm" firstAttribute="bottom" secondItem="X8N-GN-tkd" secondAttribute="bottom" id="AvF-uu-XPC"/>
+                    <constraint firstItem="nAW-ph-8k8" firstAttribute="leading" secondItem="5r9-eQ-L0U" secondAttribute="trailing" constant="11" id="Fdl-LC-IG3"/>
+                    <constraint firstItem="2uc-eR-9u9" firstAttribute="centerY" secondItem="g9A-vH-IfI" secondAttribute="centerY" id="Lew-p1-dGr"/>
+                    <constraint firstItem="L2f-oe-Vfm" firstAttribute="leading" secondItem="X8N-GN-tkd" secondAttribute="trailing" id="NV5-xH-4Ka"/>
+                    <constraint firstItem="2uc-eR-9u9" firstAttribute="leading" secondItem="g9A-vH-IfI" secondAttribute="leadingMargin" id="QcM-ij-80g"/>
+                    <constraint firstItem="5r9-eQ-L0U" firstAttribute="centerY" secondItem="nAW-ph-8k8" secondAttribute="centerY" id="Vaw-Kp-lR4"/>
+                    <constraint firstItem="X8N-GN-tkd" firstAttribute="leading" secondItem="2uc-eR-9u9" secondAttribute="trailing" constant="8" id="bCP-YM-bYQ"/>
+                    <constraint firstItem="X8N-GN-tkd" firstAttribute="top" secondItem="2uc-eR-9u9" secondAttribute="top" constant="5" id="ebf-4p-HcI"/>
+                    <constraint firstItem="nAW-ph-8k8" firstAttribute="trailing" secondItem="g9A-vH-IfI" secondAttribute="trailingMargin" id="jIU-LU-XQc"/>
+                    <constraint firstItem="nAW-ph-8k8" firstAttribute="centerY" secondItem="2uc-eR-9u9" secondAttribute="centerY" id="rak-Na-ghb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mImgeView" destination="2uc-eR-9u9" id="3Pp-ui-PGs"/>
+                <outlet property="mlab_count" destination="L2f-oe-Vfm" id="0F7-ao-2b5"/>
+                <outlet property="mlab_name" destination="X8N-GN-tkd" id="uBT-Lx-Ng9"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="87.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ds_chat.png" width="45" height="45"/>
+        <image name="ds_phone.png" width="45" height="45"/>
+        <image name="my_head_def.png" width="153" height="150"/>
+    </resources>
+</document>

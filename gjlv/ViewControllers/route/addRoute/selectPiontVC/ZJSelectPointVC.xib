@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZJSelectPointVC">
+            <connections>
+                <outlet property="mInfoCllectionView" destination="Ek2-bd-wFS" id="YRm-sR-aXA"/>
+                <outlet property="mSearchBtn" destination="4wz-GY-v22" id="u1V-KT-Zhe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wz-GY-v22">
+                    <rect key="frame" x="13" y="13" width="349" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="ITg-Ub-DSp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="搜索其他目的地" image="d_search.png">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onclickSearchBtn:" destination="-1" eventType="touchUpInside" id="FZB-q2-qHd"/>
+                    </connections>
+                </button>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ek2-bd-wFS">
+                    <rect key="frame" x="0.0" y="58" width="375" height="609"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Eab-xz-Hww">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="40" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="8Kp-f4-y3h"/>
+                        <outlet property="delegate" destination="-1" id="TRk-uX-fND"/>
+                    </connections>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主要途经点：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jm7-Tz-zTI">
+                    <rect key="frame" x="13" y="71" width="80" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4wz-GY-v22" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="13" id="4gz-RS-iKw"/>
+                <constraint firstAttribute="bottom" secondItem="Ek2-bd-wFS" secondAttribute="bottom" id="8Zf-te-GCp"/>
+                <constraint firstAttribute="trailing" secondItem="4wz-GY-v22" secondAttribute="trailing" constant="13" id="8f6-bf-vdY"/>
+                <constraint firstItem="4wz-GY-v22" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="13" id="9EJ-OJ-QBG"/>
+                <constraint firstItem="Ek2-bd-wFS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="R6A-iG-8Bi"/>
+                <constraint firstItem="Ek2-bd-wFS" firstAttribute="top" secondItem="4wz-GY-v22" secondAttribute="bottom" id="RzP-SP-9FZ"/>
+                <constraint firstItem="jm7-Tz-zTI" firstAttribute="top" secondItem="4wz-GY-v22" secondAttribute="bottom" constant="13" id="fIt-CN-TUZ"/>
+                <constraint firstAttribute="trailing" secondItem="Ek2-bd-wFS" secondAttribute="trailing" id="jcm-jU-l1s"/>
+                <constraint firstItem="jm7-Tz-zTI" firstAttribute="leading" secondItem="4wz-GY-v22" secondAttribute="leading" id="vp1-C6-ZdP"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="111.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="d_search.png" width="20" height="19"/>
+    </resources>
+</document>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ZJDSearchCell">
+            <rect key="frame" x="0.0" y="0.0" width="215" height="82"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="215" height="82"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="cJJ-Zg-Pdq">
+                        <rect key="frame" x="10" y="0.0" width="195" height="72"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重庆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UQ8-73-iHG">
+                        <rect key="frame" x="93" y="27.5" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="UQ8-73-iHG" firstAttribute="centerX" secondItem="cJJ-Zg-Pdq" secondAttribute="centerX" id="4fa-KX-ni9"/>
+                <constraint firstItem="UQ8-73-iHG" firstAttribute="centerY" secondItem="cJJ-Zg-Pdq" secondAttribute="centerY" id="5z2-kM-Crx"/>
+                <constraint firstItem="cJJ-Zg-Pdq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="BLN-ik-Sj6"/>
+                <constraint firstItem="cJJ-Zg-Pdq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Tu1-ff-VLQ"/>
+                <constraint firstAttribute="trailing" secondItem="cJJ-Zg-Pdq" secondAttribute="trailing" constant="10" id="wc9-Qr-fyu"/>
+                <constraint firstAttribute="bottom" secondItem="cJJ-Zg-Pdq" secondAttribute="bottom" constant="10" id="zBk-C5-axp"/>
+            </constraints>
+            <size key="customSize" width="215" height="82"/>
+            <connections>
+                <outlet property="mlab_title" destination="UQ8-73-iHG" id="9UX-XO-3EX"/>
+            </connections>
+            <point key="canvasLocation" x="-2" y="114"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="search_bg.png" width="209" height="84"/>
+    </resources>
+</document>

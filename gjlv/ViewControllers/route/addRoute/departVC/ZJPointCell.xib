@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZJPointCell">
+            <rect key="frame" x="0.0" y="0.0" width="107" height="57"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_head_def.png" translatesAutoresizingMaskIntoConstraints="NO" id="Koq-Ek-a8o">
+                    <rect key="frame" x="8" y="4" width="40" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Koq-Ek-a8o" secondAttribute="height" multiplier="51:50" id="EBe-Ja-gp5"/>
+                        <constraint firstAttribute="width" constant="40" id="o7b-Wm-P2d"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="艾马尔" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmH-fx-nSs">
+                    <rect key="frame" x="56" y="3.5" width="43" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="43" id="F2t-s6-Sbp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eaI-jB-3br">
+                    <rect key="frame" x="56" y="23.5" width="31" height="14.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="31" id="OQN-Ut-e92"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZEk-1k-saN">
+                    <rect key="frame" x="0.0" y="0.0" width="107" height="57"/>
+                    <connections>
+                        <action selector="onclickBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="aQI-H6-5ni"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ZEk-1k-saN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="2jM-Ol-1a2"/>
+                <constraint firstAttribute="trailing" secondItem="nmH-fx-nSs" secondAttribute="trailing" constant="8" id="9mb-Wm-jZQ"/>
+                <constraint firstItem="eaI-jB-3br" firstAttribute="top" secondItem="nmH-fx-nSs" secondAttribute="bottom" constant="3" id="GtB-0P-Xco"/>
+                <constraint firstItem="nmH-fx-nSs" firstAttribute="top" secondItem="Koq-Ek-a8o" secondAttribute="top" id="Ub2-hb-6oA"/>
+                <constraint firstItem="Koq-Ek-a8o" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-5" id="YkZ-w3-pud"/>
+                <constraint firstItem="nmH-fx-nSs" firstAttribute="leading" secondItem="Koq-Ek-a8o" secondAttribute="trailing" constant="8" id="dx8-K5-PBb"/>
+                <constraint firstItem="Koq-Ek-a8o" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="eyu-fA-cdC"/>
+                <constraint firstAttribute="bottom" secondItem="ZEk-1k-saN" secondAttribute="bottom" id="fBh-un-yeh"/>
+                <constraint firstAttribute="trailing" secondItem="ZEk-1k-saN" secondAttribute="trailing" id="iH7-Cz-jfj"/>
+                <constraint firstItem="ZEk-1k-saN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jva-k9-eVN"/>
+                <constraint firstItem="eaI-jB-3br" firstAttribute="leading" secondItem="nmH-fx-nSs" secondAttribute="leading" id="r0x-yr-yg0"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mDistance" destination="eaI-jB-3br" id="Lqm-ad-vQg"/>
+                <outlet property="mHeadView" destination="Koq-Ek-a8o" id="mKn-dO-vKS"/>
+                <outlet property="mName" destination="nmH-fx-nSs" id="8pR-Zn-EYI"/>
+            </connections>
+            <point key="canvasLocation" x="-36.5" y="-57.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="my_head_def.png" width="153" height="150"/>
+    </resources>
+</document>

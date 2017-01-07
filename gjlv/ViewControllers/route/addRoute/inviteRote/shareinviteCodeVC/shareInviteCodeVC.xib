@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="shareInviteCodeVC">
+            <connections>
+                <outlet property="mInfoCollectionView" destination="Oks-Mz-3wx" id="LRn-bO-ADD"/>
+                <outlet property="mlab_inCodel" destination="c5Q-X4-k78" id="tTd-SU-lXe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邀请码：11111" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c5Q-X4-k78">
+                    <rect key="frame" x="139.5" y="55" width="95.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.91372549020000005" green="0.72549019609999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="对方下载“自驾游”APP输入邀请码完成验证后，就可以看到您规划的路线" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9he-E2-Qmw">
+                    <rect key="frame" x="30" y="93" width="315" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="o5Y-KF-p7o"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.1215686275" green="0.12941176469999999" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Oks-Mz-3wx">
+                    <rect key="frame" x="30" y="166" width="315" height="80"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="Ymq-aE-9WA"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="8ks-uF-TwD">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="kLd-CH-v6a"/>
+                        <outlet property="delegate" destination="-1" id="uld-Lf-p63"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="c5Q-X4-k78" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="55" id="MWu-2a-YFA"/>
+                <constraint firstItem="Oks-Mz-3wx" firstAttribute="leading" secondItem="9he-E2-Qmw" secondAttribute="leading" id="PQ9-wq-11M"/>
+                <constraint firstItem="Oks-Mz-3wx" firstAttribute="trailing" secondItem="9he-E2-Qmw" secondAttribute="trailing" id="Zu1-v2-EBA"/>
+                <constraint firstAttribute="trailing" secondItem="9he-E2-Qmw" secondAttribute="trailing" constant="30" id="aEu-rr-uWc"/>
+                <constraint firstItem="9he-E2-Qmw" firstAttribute="top" secondItem="c5Q-X4-k78" secondAttribute="bottom" constant="20" id="eJr-8M-N20"/>
+                <constraint firstItem="Oks-Mz-3wx" firstAttribute="top" secondItem="9he-E2-Qmw" secondAttribute="bottom" constant="8" id="g2T-o6-5a4"/>
+                <constraint firstItem="c5Q-X4-k78" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="m6b-9S-yXQ"/>
+                <constraint firstItem="9he-E2-Qmw" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="nhK-px-R44"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="69.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZJGLeaderDetailVC">
+            <connections>
+                <outlet property="mBtn_phone" destination="LTP-y4-eYr" id="Dgf-Ug-cWn"/>
+                <outlet property="mBtn_select" destination="Voz-pT-lo7" id="mok-4h-Lmj"/>
+                <outlet property="mInfoTableView" destination="pg0-Eq-Phl" id="vtE-HY-MSL"/>
+                <outlet property="mNavView" destination="JR3-Ou-G05" id="yjA-tE-h4Y"/>
+                <outlet property="view" destination="Msd-Aa-Xwz" id="0BP-OQ-FWL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Msd-Aa-Xwz">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pg0-Eq-Phl">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="separatorColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="SzY-OG-kGl"/>
+                        <outlet property="delegate" destination="-1" id="r2c-X1-pCX"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JR3-Ou-G05">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RZj-QM-Vhz">
+                            <rect key="frame" x="8" y="22" width="47" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="RZj-QM-Vhz" secondAttribute="height" multiplier="73:70" id="IL9-tQ-0Of"/>
+                                <constraint firstAttribute="height" constant="45" id="eQI-sa-3I7"/>
+                            </constraints>
+                            <state key="normal" image="dd_back.png"/>
+                            <connections>
+                                <action selector="onclickBackBtn:" destination="-1" eventType="touchUpInside" id="Cim-Mz-6iN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoO-wX-MmT">
+                            <rect key="frame" x="315" y="22" width="47" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="VoO-wX-MmT" secondAttribute="height" multiplier="73:70" id="RzQ-aR-5mY"/>
+                                <constraint firstAttribute="height" constant="45" id="kDj-Su-8qP"/>
+                            </constraints>
+                            <state key="normal" image="dd_share.png"/>
+                            <connections>
+                                <action selector="onclickShareBtn:" destination="-1" eventType="touchUpInside" id="n00-am-mvL"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="RZj-QM-Vhz" firstAttribute="top" secondItem="JR3-Ou-G05" secondAttribute="top" constant="22" id="3By-pJ-O33"/>
+                        <constraint firstAttribute="height" constant="64" id="45y-oy-NOo"/>
+                        <constraint firstItem="VoO-wX-MmT" firstAttribute="width" secondItem="VoO-wX-MmT" secondAttribute="height" multiplier="73:70" id="4n5-ru-wW8"/>
+                        <constraint firstAttribute="trailing" secondItem="VoO-wX-MmT" secondAttribute="trailing" constant="13" id="RmI-73-zgb"/>
+                        <constraint firstItem="RZj-QM-Vhz" firstAttribute="leading" secondItem="JR3-Ou-G05" secondAttribute="leading" constant="8" id="jjf-L8-T9b"/>
+                        <constraint firstItem="VoO-wX-MmT" firstAttribute="centerY" secondItem="RZj-QM-Vhz" secondAttribute="centerY" id="oeZ-oE-Z8o"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Voz-pT-lo7">
+                    <rect key="frame" x="0.0" y="612" width="375" height="55"/>
+                    <color key="backgroundColor" red="0.91372549020000005" green="0.72549019609999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="pDI-vD-hAK"/>
+                    </constraints>
+                    <state key="normal" title="就选TA">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onlcickSelectBtn:" destination="-1" eventType="touchUpInside" id="Haz-pf-7y2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LTP-y4-eYr">
+                    <rect key="frame" x="8" y="554" width="359" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="JuO-bX-Qjm"/>
+                    </constraints>
+                    <state key="normal" title="一键拨号" image="f_dh.png" backgroundImage="f_dpBG.png">
+                        <color key="titleColor" red="0.91372549020000005" green="0.72549019609999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onclickPhoneBtn:" destination="-1" eventType="touchUpInside" id="SeS-Yy-gch"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Voz-pT-lo7" firstAttribute="leading" secondItem="Msd-Aa-Xwz" secondAttribute="leading" id="0Np-FW-UYC"/>
+                <constraint firstAttribute="bottom" secondItem="pg0-Eq-Phl" secondAttribute="bottom" id="5gz-og-mAN"/>
+                <constraint firstAttribute="trailing" secondItem="pg0-Eq-Phl" secondAttribute="trailing" id="6CO-Xi-m0c"/>
+                <constraint firstAttribute="bottom" secondItem="Voz-pT-lo7" secondAttribute="bottom" id="DNT-27-6Mh"/>
+                <constraint firstItem="JR3-Ou-G05" firstAttribute="top" secondItem="Msd-Aa-Xwz" secondAttribute="top" id="H11-0V-dwR"/>
+                <constraint firstAttribute="trailing" secondItem="LTP-y4-eYr" secondAttribute="trailing" constant="8" id="HJq-R9-8mW"/>
+                <constraint firstItem="pg0-Eq-Phl" firstAttribute="leading" secondItem="Msd-Aa-Xwz" secondAttribute="leading" id="LK1-IV-mE3"/>
+                <constraint firstItem="pg0-Eq-Phl" firstAttribute="top" secondItem="Msd-Aa-Xwz" secondAttribute="top" id="QlM-0m-YWC"/>
+                <constraint firstItem="Voz-pT-lo7" firstAttribute="top" secondItem="LTP-y4-eYr" secondAttribute="bottom" constant="8" id="lSM-Za-Tsm"/>
+                <constraint firstItem="LTP-y4-eYr" firstAttribute="leading" secondItem="Msd-Aa-Xwz" secondAttribute="leading" constant="8" id="lpc-NR-9PR"/>
+                <constraint firstAttribute="trailing" secondItem="JR3-Ou-G05" secondAttribute="trailing" id="nra-71-afE"/>
+                <constraint firstItem="JR3-Ou-G05" firstAttribute="leading" secondItem="Msd-Aa-Xwz" secondAttribute="leading" id="q8D-NE-MuQ"/>
+                <constraint firstAttribute="trailing" secondItem="Voz-pT-lo7" secondAttribute="trailing" id="qEW-cP-JKY"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="74.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dd_back.png" width="30" height="28"/>
+        <image name="dd_share.png" width="30" height="28"/>
+        <image name="f_dh.png" width="20" height="19"/>
+        <image name="f_dpBG.png" width="282" height="37"/>
+    </resources>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="235" id="KGk-i7-Jjw" customClass="ZJMHeadCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="235"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="234"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dd_def.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZJY-92-G4n">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="234"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="234" id="RgZ-TW-h1a"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="点击更换头像" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWZ-4e-br5">
+                        <rect key="frame" x="215" y="-31" width="92" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="KWZ-4e-br5" secondAttribute="bottom" constant="13" id="B31-d8-GMB"/>
+                    <constraint firstItem="ZJY-92-G4n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QVH-Hk-SeR"/>
+                    <constraint firstAttribute="trailing" secondItem="ZJY-92-G4n" secondAttribute="trailing" id="jk4-Ww-yjN"/>
+                    <constraint firstAttribute="trailing" secondItem="KWZ-4e-br5" secondAttribute="trailing" constant="13" id="jsm-4P-jQ1"/>
+                    <constraint firstItem="ZJY-92-G4n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kK1-vJ-lBe"/>
+                    <constraint firstAttribute="bottom" secondItem="ZJY-92-G4n" secondAttribute="bottom" id="vme-vK-CfJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mIMG" destination="ZJY-92-G4n" id="3ug-cu-LuR"/>
+            </connections>
+            <point key="canvasLocation" x="15" y="-1.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="dd_def.png" width="620" height="371"/>
+    </resources>
+</document>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="ZJRegisterCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Register_code.png" translatesAutoresizingMaskIntoConstraints="NO" id="zce-5d-yZ6">
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="zce-5d-yZ6" secondAttribute="height" multiplier="23:31" id="ott-Fk-Nc9"/>
+                            <constraint firstAttribute="width" constant="15" id="zYN-Ld-h2u"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kZX-GM-NWN">
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                        <connections>
+                            <outlet property="delegate" destination="-1" id="d0n-vL-Ijv"/>
+                        </connections>
+                    </textField>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Register_line_gold.png" translatesAutoresizingMaskIntoConstraints="NO" id="8vB-I9-uOL"/>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1r-ed-Lhj">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="获取验证码">
+                            <color key="titleColor" red="0.91372549020000005" green="0.72549019609999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="onclickGetCodeBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WdV-42-zIs"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npd-Q4-Md8">
+                        <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="d0L-Kf-Q64"/>
+                            <constraint firstAttribute="height" constant="15" id="mQ4-sb-0MI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="e1r-ed-Lhj" secondAttribute="trailing" constant="5" id="AgR-R3-XN9"/>
+                    <constraint firstItem="zce-5d-yZ6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Dzz-5y-fye"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="zce-5d-yZ6" secondAttribute="leading" id="N5N-x7-j2q"/>
+                    <constraint firstItem="e1r-ed-Lhj" firstAttribute="centerY" secondItem="kZX-GM-NWN" secondAttribute="centerY" id="Ub8-5J-ynr"/>
+                    <constraint firstItem="8vB-I9-uOL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="W4W-xc-cCc"/>
+                    <constraint firstAttribute="trailing" secondItem="8vB-I9-uOL" secondAttribute="trailing" constant="13" id="WpC-U3-k2i"/>
+                    <constraint firstItem="kZX-GM-NWN" firstAttribute="leading" secondItem="zce-5d-yZ6" secondAttribute="trailing" constant="8" id="Xif-4f-553"/>
+                    <constraint firstAttribute="trailing" secondItem="kZX-GM-NWN" secondAttribute="trailing" constant="14" id="dNQ-i4-Y1N"/>
+                    <constraint firstItem="e1r-ed-Lhj" firstAttribute="leading" secondItem="npd-Q4-Md8" secondAttribute="trailing" constant="8" id="hjH-JU-PXp"/>
+                    <constraint firstItem="kZX-GM-NWN" firstAttribute="centerY" secondItem="zce-5d-yZ6" secondAttribute="centerY" id="jaA-ze-u9c"/>
+                    <constraint firstItem="npd-Q4-Md8" firstAttribute="centerY" secondItem="e1r-ed-Lhj" secondAttribute="centerY" id="pp5-VG-GHQ"/>
+                    <constraint firstAttribute="bottom" secondItem="8vB-I9-uOL" secondAttribute="bottom" id="xrx-wa-Y32"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mBtn_getCode" destination="e1r-ed-Lhj" id="AzD-Sx-kbs"/>
+                <outlet property="mIMG_line" destination="8vB-I9-uOL" id="ktC-hc-WQa"/>
+                <outlet property="mImageView" destination="zce-5d-yZ6" id="JyG-Lj-W3G"/>
+                <outlet property="mTF_input" destination="kZX-GM-NWN" id="VK9-y0-Jja"/>
+                <outlet property="mlab_markCode" destination="npd-Q4-Md8" id="UyB-DW-2SF"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="59"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Register_code.png" width="23" height="31"/>
+        <image name="Register_line_gold.png" width="561" height="1"/>
+    </resources>
+</document>

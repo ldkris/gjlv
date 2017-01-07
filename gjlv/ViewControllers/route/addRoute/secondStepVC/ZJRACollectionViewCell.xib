@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="s4j-bN-Wpa" customClass="ZJRACollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hYo-jA-6bl">
+                    <rect key="frame" x="0.0" y="0.0" width="137" height="64"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="途径" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fh-Is-ZaR">
+                    <rect key="frame" x="56.5" y="20" width="25" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13333公里" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqW-3p-dyq">
+                    <rect key="frame" x="36.5" y="34" width="65" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3fh-Is-ZaR" firstAttribute="centerY" secondItem="s4j-bN-Wpa" secondAttribute="centerY" constant="-5" id="0gu-40-KA1"/>
+                <constraint firstItem="hYo-jA-6bl" firstAttribute="leading" secondItem="s4j-bN-Wpa" secondAttribute="leading" id="DDg-WJ-fLZ"/>
+                <constraint firstItem="EqW-3p-dyq" firstAttribute="centerX" secondItem="3fh-Is-ZaR" secondAttribute="centerX" id="RIX-Ak-yUH"/>
+                <constraint firstItem="3fh-Is-ZaR" firstAttribute="centerX" secondItem="s4j-bN-Wpa" secondAttribute="centerX" id="VeN-nt-vOZ"/>
+                <constraint firstItem="hYo-jA-6bl" firstAttribute="top" secondItem="s4j-bN-Wpa" secondAttribute="top" id="dYN-4E-9TP"/>
+                <constraint firstItem="EqW-3p-dyq" firstAttribute="top" secondItem="3fh-Is-ZaR" secondAttribute="bottom" constant="-0.5" id="dkd-je-iK8"/>
+                <constraint firstAttribute="trailing" secondItem="hYo-jA-6bl" secondAttribute="trailing" constant="1" id="jsB-7d-Mjy"/>
+                <constraint firstAttribute="bottom" secondItem="hYo-jA-6bl" secondAttribute="bottom" id="lI2-xs-ION"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mBGView" destination="hYo-jA-6bl" id="QCq-bj-5Js"/>
+                <outlet property="mlab_jl" destination="EqW-3p-dyq" id="Kwk-20-Uhg"/>
+                <outlet property="mlab_title" destination="3fh-Is-ZaR" id="Q7g-3m-3Te"/>
+            </connections>
+            <point key="canvasLocation" x="-113" y="-230"/>
+        </view>
+    </objects>
+</document>

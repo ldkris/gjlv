@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZJSearchPointVC">
+            <connections>
+                <outlet property="mInfoTableView" destination="FFS-fk-hE1" id="LRd-uc-j9V"/>
+                <outlet property="mNavView" destination="IgZ-h9-eGR" id="9zt-nN-rhG"/>
+                <outlet property="mSearchTF" destination="h4o-FH-fZI" id="7n7-qc-vzR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IgZ-h9-eGR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhw-rD-dfi">
+                            <rect key="frame" x="0.0" y="21" width="40" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Nhw-rD-dfi" secondAttribute="height" multiplier="10:11" id="AbW-fP-PZc"/>
+                                <constraint firstAttribute="width" constant="40" id="OOd-YX-78H"/>
+                            </constraints>
+                            <state key="normal" image="icon_back.png"/>
+                            <connections>
+                                <action selector="onclickBackBtn:" destination="-1" eventType="touchUpInside" id="CjP-nd-Dwh"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U2E-n6-Dnq">
+                            <rect key="frame" x="40" y="22" width="335" height="42"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EjO-g6-hE0">
+                                    <rect key="frame" x="0.0" y="12" width="1" height="18"/>
+                                    <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="18" id="HWC-gk-pWP"/>
+                                        <constraint firstAttribute="width" constant="1" id="brp-hz-us1"/>
+                                    </constraints>
+                                </view>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="请输入目的地或者关键字" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="h4o-FH-fZI">
+                                    <rect key="frame" x="41" y="12" width="286" height="19"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="Sfm-Ah-GYe"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="h4o-FH-fZI" firstAttribute="centerY" secondItem="U2E-n6-Dnq" secondAttribute="centerY" id="Z4Y-4a-Ezm"/>
+                                <constraint firstItem="EjO-g6-hE0" firstAttribute="centerY" secondItem="U2E-n6-Dnq" secondAttribute="centerY" id="pQt-pJ-jal"/>
+                                <constraint firstAttribute="trailing" secondItem="h4o-FH-fZI" secondAttribute="trailing" constant="8" id="wfQ-i8-9zK"/>
+                                <constraint firstItem="EjO-g6-hE0" firstAttribute="leading" secondItem="U2E-n6-Dnq" secondAttribute="leading" id="yag-hu-w1v"/>
+                            </constraints>
+                        </view>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d_search.png" translatesAutoresizingMaskIntoConstraints="NO" id="uMa-UB-iwC">
+                            <rect key="frame" x="53" y="31" width="25" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="NuG-Kc-PuZ"/>
+                                <constraint firstAttribute="width" constant="25" id="X83-sc-blq"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.91372549020000005" green="0.72549019609999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="GNH-k8-hor"/>
+                        <constraint firstItem="uMa-UB-iwC" firstAttribute="centerY" secondItem="h4o-FH-fZI" secondAttribute="centerY" constant="-2" id="JcH-Ka-SfB"/>
+                        <constraint firstAttribute="trailing" secondItem="U2E-n6-Dnq" secondAttribute="trailing" id="N98-oC-5oH"/>
+                        <constraint firstItem="U2E-n6-Dnq" firstAttribute="top" secondItem="IgZ-h9-eGR" secondAttribute="top" constant="22" id="Sp8-cb-DC6"/>
+                        <constraint firstAttribute="bottom" secondItem="U2E-n6-Dnq" secondAttribute="bottom" id="a1P-5N-AGo"/>
+                        <constraint firstItem="U2E-n6-Dnq" firstAttribute="leading" secondItem="Nhw-rD-dfi" secondAttribute="trailing" id="hUn-nr-KkF"/>
+                        <constraint firstItem="Nhw-rD-dfi" firstAttribute="centerY" secondItem="U2E-n6-Dnq" secondAttribute="centerY" id="mN7-md-Uyd"/>
+                        <constraint firstItem="Nhw-rD-dfi" firstAttribute="leading" secondItem="IgZ-h9-eGR" secondAttribute="leading" id="n7b-g2-Pdc"/>
+                        <constraint firstItem="h4o-FH-fZI" firstAttribute="leading" secondItem="uMa-UB-iwC" secondAttribute="trailing" constant="3" id="pgO-2Z-zLd"/>
+                        <constraint firstItem="uMa-UB-iwC" firstAttribute="leading" secondItem="Nhw-rD-dfi" secondAttribute="trailing" constant="13" id="tYs-dZ-Hps"/>
+                        <constraint firstAttribute="height" constant="64" id="thz-C1-UAh"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FFS-fk-hE1">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="EzC-g0-bHs"/>
+                        <outlet property="delegate" destination="-1" id="kqe-DO-Cmc"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IgZ-h9-eGR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6mu-T5-omw"/>
+                <constraint firstItem="IgZ-h9-eGR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="FSY-kG-pZI"/>
+                <constraint firstAttribute="trailing" secondItem="IgZ-h9-eGR" secondAttribute="trailing" id="HLs-qw-DE0"/>
+                <constraint firstAttribute="bottom" secondItem="FFS-fk-hE1" secondAttribute="bottom" id="h7o-JE-4yf"/>
+                <constraint firstAttribute="trailing" secondItem="FFS-fk-hE1" secondAttribute="trailing" id="nzT-hb-G8a"/>
+                <constraint firstItem="FFS-fk-hE1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oYj-9a-ekL"/>
+                <constraint firstItem="FFS-fk-hE1" firstAttribute="top" secondItem="IgZ-h9-eGR" secondAttribute="bottom" id="tyC-AD-EOb"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="d_search.png" width="20" height="19"/>
+        <image name="icon_back.png" width="20" height="22"/>
+    </resources>
+</document>

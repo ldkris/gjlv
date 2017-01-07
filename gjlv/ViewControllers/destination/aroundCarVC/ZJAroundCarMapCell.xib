@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ZJAroundCarMapCell">
+            <rect key="frame" x="0.0" y="0.0" width="298" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="298" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="51x-K7-xp8">
+                        <rect key="frame" x="0.0" y="100" width="298" height="50"/>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.85882352939999995" blue="0.70196078429999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="dIn-5z-RNY"/>
+                        </constraints>
+                        <inset key="titleEdgeInsets" minX="11" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="加好友" image="a_addFriend.png">
+                            <color key="titleColor" red="0.91372549020000005" green="0.72549019609999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_head_def.png" translatesAutoresizingMaskIntoConstraints="NO" id="X2P-jC-Ih9">
+                        <rect key="frame" x="8" y="17.5" width="55" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="8SR-ab-2Ge"/>
+                            <constraint firstAttribute="width" secondItem="X2P-jC-Ih9" secondAttribute="height" multiplier="1:1" id="ls2-Ts-JXN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="里一份" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tQE-9Y-MQR">
+                        <rect key="frame" x="68" y="17.5" width="46" height="18"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距您" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wc7-Mw-spz">
+                        <rect key="frame" x="68" y="46.5" width="27" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghy-VN-zeO">
+                        <rect key="frame" x="97" y="44.5" width="22" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.91372549020000005" green="0.72549019609999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公里" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkA-Q7-8fb">
+                        <rect key="frame" x="122" y="46.5" width="27" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="a_textBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="e2S-Gy-yDT">
+                        <rect key="frame" x="120" y="15.5" width="94" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="Xr3-dX-pSS"/>
+                        </constraints>
+                    </imageView>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="去丽江" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUc-TG-8UV">
+                        <rect key="frame" x="139" y="18" width="43" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Wc7-Mw-spz" firstAttribute="bottom" secondItem="X2P-jC-Ih9" secondAttribute="bottom" constant="-10" id="1PG-cN-Hum"/>
+                <constraint firstAttribute="trailing" secondItem="51x-K7-xp8" secondAttribute="trailing" id="2b5-86-jWO"/>
+                <constraint firstAttribute="bottom" secondItem="51x-K7-xp8" secondAttribute="bottom" id="4Af-bU-eXZ"/>
+                <constraint firstItem="ghy-VN-zeO" firstAttribute="centerY" secondItem="Wc7-Mw-spz" secondAttribute="centerY" id="7Q3-Kz-HVs"/>
+                <constraint firstItem="X2P-jC-Ih9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Dco-4w-vP6"/>
+                <constraint firstItem="tQE-9Y-MQR" firstAttribute="leading" secondItem="X2P-jC-Ih9" secondAttribute="trailing" constant="5" id="UtO-FK-ZdX"/>
+                <constraint firstItem="51x-K7-xp8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZUi-Wc-xb8"/>
+                <constraint firstItem="mUc-TG-8UV" firstAttribute="centerY" secondItem="tQE-9Y-MQR" secondAttribute="centerY" id="a2T-WP-2Pm"/>
+                <constraint firstItem="dkA-Q7-8fb" firstAttribute="leading" secondItem="ghy-VN-zeO" secondAttribute="trailing" constant="3" id="aza-fL-bDN"/>
+                <constraint firstItem="tQE-9Y-MQR" firstAttribute="top" secondItem="X2P-jC-Ih9" secondAttribute="top" id="byn-5U-FB1"/>
+                <constraint firstItem="e2S-Gy-yDT" firstAttribute="centerY" secondItem="tQE-9Y-MQR" secondAttribute="centerY" id="eF5-Zt-qPm"/>
+                <constraint firstItem="dkA-Q7-8fb" firstAttribute="centerY" secondItem="ghy-VN-zeO" secondAttribute="centerY" id="lr6-X6-bjR"/>
+                <constraint firstItem="X2P-jC-Ih9" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" constant="-30" id="pXh-r6-U0a"/>
+                <constraint firstItem="Wc7-Mw-spz" firstAttribute="leading" secondItem="tQE-9Y-MQR" secondAttribute="leading" id="ru7-YB-hKJ"/>
+                <constraint firstItem="mUc-TG-8UV" firstAttribute="leading" secondItem="tQE-9Y-MQR" secondAttribute="trailing" constant="25" id="vKj-Dn-d5p"/>
+                <constraint firstItem="ghy-VN-zeO" firstAttribute="leading" secondItem="Wc7-Mw-spz" secondAttribute="trailing" constant="2" id="wXQ-ds-3ws"/>
+                <constraint firstItem="e2S-Gy-yDT" firstAttribute="leading" secondItem="tQE-9Y-MQR" secondAttribute="trailing" constant="6" id="xgh-fd-sGS"/>
+            </constraints>
+            <size key="customSize" width="298" height="150"/>
+            <connections>
+                <outlet property="btn" destination="51x-K7-xp8" id="hiF-X1-vm9"/>
+                <outlet property="mIMG_head" destination="X2P-jC-Ih9" id="ift-1L-pb3"/>
+                <outlet property="mlab_Name" destination="tQE-9Y-MQR" id="izh-dH-dfH"/>
+                <outlet property="mlab_content" destination="mUc-TG-8UV" id="u3K-eY-tf1"/>
+                <outlet property="mlab_dis" destination="ghy-VN-zeO" id="UhA-Dh-Qb9"/>
+            </connections>
+            <point key="canvasLocation" x="11" y="97"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="a_addFriend.png" width="22" height="19"/>
+        <image name="a_textBG.png" width="94" height="29"/>
+        <image name="my_head_def.png" width="153" height="150"/>
+    </resources>
+</document>

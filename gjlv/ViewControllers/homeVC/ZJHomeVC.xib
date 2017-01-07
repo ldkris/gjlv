@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZJHomeVC">
+            <connections>
+                <outlet property="btn_City" destination="N87-Mm-VTr" id="jFC-kq-iBA"/>
+                <outlet property="mInfoTableView" destination="5BE-xH-s5B" id="lJI-ux-gxy"/>
+                <outlet property="mNavView" destination="0Di-uv-x8d" id="xYE-3w-zYp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="5BE-xH-s5B">
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="yEw-YD-PW9"/>
+                        <outlet property="delegate" destination="-1" id="kPh-63-P0Z"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Di-uv-x8d">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N87-Mm-VTr">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="TeO-8V-RoC"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="titleEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="重庆" image="home_adress.png">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="onclickSelectCity:" destination="-1" eventType="touchUpInside" id="R6e-gW-pUN"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T5l-bp-dKW">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="T5l-bp-dKW" secondAttribute="height" multiplier="1:1" id="fb8-NT-K0b"/>
+                                <constraint firstAttribute="width" constant="26" id="ywX-fX-OLU"/>
+                            </constraints>
+                            <state key="normal" image="home_message.png"/>
+                            <connections>
+                                <action selector="onclickMessageBtn:" destination="-1" eventType="touchUpInside" id="iap-Dj-ZGt"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nK3-4S-yfh">
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="9"/>
+                            <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="搜索目的地" backgroundImage="home_tfBG.png">
+                                <color key="titleColor" red="0.36078431370000003" green="0.36078431370000003" blue="0.36078431370000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onclickSearchDesBtn:" destination="-1" eventType="touchUpInside" id="b8k-vS-scZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.91372549020000005" green="0.72549019609999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="T5l-bp-dKW" firstAttribute="leading" secondItem="nK3-4S-yfh" secondAttribute="trailing" constant="8" id="0ya-HI-NCV"/>
+                        <constraint firstItem="N87-Mm-VTr" firstAttribute="leading" secondItem="0Di-uv-x8d" secondAttribute="leading" constant="8" id="VGI-xe-R0v"/>
+                        <constraint firstAttribute="height" constant="64" id="Zvw-Gm-43v"/>
+                        <constraint firstAttribute="trailing" secondItem="T5l-bp-dKW" secondAttribute="trailing" constant="8" id="bK5-e3-TRE"/>
+                        <constraint firstItem="T5l-bp-dKW" firstAttribute="centerY" secondItem="0Di-uv-x8d" secondAttribute="centerY" constant="5" id="gE3-Vu-GF7"/>
+                        <constraint firstItem="nK3-4S-yfh" firstAttribute="centerY" secondItem="N87-Mm-VTr" secondAttribute="centerY" constant="5" id="job-A2-7Dl"/>
+                        <constraint firstItem="nK3-4S-yfh" firstAttribute="leading" secondItem="N87-Mm-VTr" secondAttribute="trailing" constant="8" id="qZO-UK-fHg"/>
+                        <constraint firstItem="N87-Mm-VTr" firstAttribute="centerY" secondItem="0Di-uv-x8d" secondAttribute="centerY" constant="5" id="wHs-u1-FeE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0Di-uv-x8d" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NKs-Li-uBg"/>
+                <constraint firstAttribute="trailing" secondItem="0Di-uv-x8d" secondAttribute="trailing" id="SOQ-0E-LP2"/>
+                <constraint firstItem="0Di-uv-x8d" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="U2j-Vo-xvk"/>
+                <constraint firstItem="5BE-xH-s5B" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="ehz-bg-FI8"/>
+                <constraint firstAttribute="bottom" secondItem="5BE-xH-s5B" secondAttribute="bottom" id="hTe-R0-4bD"/>
+                <constraint firstAttribute="trailing" secondItem="5BE-xH-s5B" secondAttribute="trailing" id="r3C-rD-1gx"/>
+                <constraint firstItem="5BE-xH-s5B" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vRh-ld-EU3"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="68.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="home_adress.png" width="15" height="17"/>
+        <image name="home_message.png" width="21" height="21"/>
+        <image name="home_tfBG.png" width="403" height="22"/>
+    </resources>
+</document>

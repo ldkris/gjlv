@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZJASDetailVC">
+            <connections>
+                <outlet property="mInfotableView" destination="ztW-eE-4VL" id="OQr-YQ-SmN"/>
+                <outlet property="mMLTableView" destination="nT0-t6-WnG" id="kqd-hr-by7"/>
+                <outlet property="mMLView" destination="5EK-b0-LPZ" id="58T-pS-LOb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ztW-eE-4VL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <color key="separatorColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="sF8-36-rlF"/>
+                        <outlet property="delegate" destination="-1" id="F4A-OD-NgA"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6a-UR-X6z">
+                    <rect key="frame" x="0.0" y="318" width="60" height="30"/>
+                    <state key="normal" image="dd_meun.png"/>
+                    <connections>
+                        <action selector="onclickMeunBtn:" destination="-1" eventType="touchUpInside" id="vBd-gR-S4d"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5EK-b0-LPZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="nT0-t6-WnG">
+                            <rect key="frame" x="0.0" y="0.0" width="295" height="667"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.8963468309859155" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="9cy-oY-GY7"/>
+                                <outlet property="delegate" destination="-1" id="vX4-eW-ZzO"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="nT0-t6-WnG" firstAttribute="leading" secondItem="5EK-b0-LPZ" secondAttribute="leading" id="X6D-bM-9az"/>
+                        <constraint firstAttribute="bottom" secondItem="nT0-t6-WnG" secondAttribute="bottom" id="Y7z-0J-K9v"/>
+                        <constraint firstItem="nT0-t6-WnG" firstAttribute="leading" secondItem="5EK-b0-LPZ" secondAttribute="leading" id="mTb-WS-OUb"/>
+                        <constraint firstAttribute="width" constant="375" id="oTD-sv-bjh"/>
+                        <constraint firstAttribute="trailing" secondItem="nT0-t6-WnG" secondAttribute="trailing" constant="80" id="pzD-vF-3uv"/>
+                        <constraint firstItem="nT0-t6-WnG" firstAttribute="top" secondItem="5EK-b0-LPZ" secondAttribute="top" id="xuG-Is-i5h"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ztW-eE-4VL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="426-NP-yUp"/>
+                <constraint firstItem="ztW-eE-4VL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="CpA-9p-0tP"/>
+                <constraint firstItem="5EK-b0-LPZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Don-Jc-vlO"/>
+                <constraint firstAttribute="trailing" secondItem="ztW-eE-4VL" secondAttribute="trailing" id="ILP-Yb-N80"/>
+                <constraint firstItem="V6a-UR-X6z" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eO9-fb-Rwx"/>
+                <constraint firstAttribute="bottom" secondItem="ztW-eE-4VL" secondAttribute="bottom" id="gYJ-YX-ehK"/>
+                <constraint firstItem="V6a-UR-X6z" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="jwp-Ax-786"/>
+                <constraint firstItem="5EK-b0-LPZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="r2P-G1-LLn"/>
+                <constraint firstAttribute="bottom" secondItem="5EK-b0-LPZ" secondAttribute="bottom" id="xuR-x0-Pp1"/>
+            </constraints>
+            <point key="canvasLocation" x="32.5" y="100.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="dd_meun.png" width="60" height="30"/>
+    </resources>
+</document>

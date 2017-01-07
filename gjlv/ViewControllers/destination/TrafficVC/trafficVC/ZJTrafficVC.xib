@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZJTrafficVC">
+            <connections>
+                <outlet property="infoView" destination="ek9-sG-D2r" id="58v-2l-KSI"/>
+                <outlet property="mInfoTableView" destination="o7v-aF-yhm" id="7WM-uf-pkC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LB3-fu-Ycu" customClass="BMKMapView">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ek9-sG-D2r">
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o7v-aF-yhm">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="phd-rn-xck"/>
+                                <outlet property="delegate" destination="-1" id="Zp9-ex-T21"/>
+                            </connections>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLn-Te-bPf">
+                            <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="7"/>
+                            <state key="normal" image="t_up.png"/>
+                            <connections>
+                                <action selector="onclickUpBtn:" destination="-1" eventType="touchUpInside" id="PD7-SX-kYr"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="rLn-Te-bPf" firstAttribute="leading" secondItem="ek9-sG-D2r" secondAttribute="leading" id="18J-37-6hE"/>
+                        <constraint firstItem="o7v-aF-yhm" firstAttribute="leading" secondItem="ek9-sG-D2r" secondAttribute="leading" id="7XF-r2-v0e"/>
+                        <constraint firstItem="o7v-aF-yhm" firstAttribute="top" secondItem="rLn-Te-bPf" secondAttribute="bottom" constant="-1" id="bI4-9t-NPX"/>
+                        <constraint firstAttribute="bottom" secondItem="o7v-aF-yhm" secondAttribute="bottom" id="ebc-ED-LPa"/>
+                        <constraint firstItem="rLn-Te-bPf" firstAttribute="top" secondItem="ek9-sG-D2r" secondAttribute="top" id="ifx-EA-k1a"/>
+                        <constraint firstAttribute="trailing" secondItem="o7v-aF-yhm" secondAttribute="trailing" id="jAm-zT-0nz"/>
+                        <constraint firstAttribute="trailing" secondItem="rLn-Te-bPf" secondAttribute="trailing" id="nw9-6j-XPD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ek9-sG-D2r" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-250" id="8IE-Es-aeI"/>
+                <constraint firstAttribute="trailing" secondItem="LB3-fu-Ycu" secondAttribute="trailing" id="9ob-ig-xPG"/>
+                <constraint firstItem="ek9-sG-D2r" firstAttribute="trailing" secondItem="LB3-fu-Ycu" secondAttribute="trailing" id="HEz-db-Rgi"/>
+                <constraint firstItem="LB3-fu-Ycu" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LI8-VJ-xbh"/>
+                <constraint firstItem="ek9-sG-D2r" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PWO-6U-5C0"/>
+                <constraint firstItem="LB3-fu-Ycu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="YGT-xK-Ozn"/>
+                <constraint firstAttribute="bottom" secondItem="ek9-sG-D2r" secondAttribute="bottom" id="pJc-Qi-IvF"/>
+                <constraint firstAttribute="bottom" secondItem="LB3-fu-Ycu" secondAttribute="bottom" id="uBq-YS-Fvr"/>
+            </constraints>
+            <point key="canvasLocation" x="-39.5" y="114.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="t_up.png" width="118" height="20"/>
+    </resources>
+</document>

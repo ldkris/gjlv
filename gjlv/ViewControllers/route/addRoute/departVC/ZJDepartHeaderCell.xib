@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="64" id="KGk-i7-Jjw" customClass="ZJDepartHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjc-Nk-Tcw">
+                        <rect key="frame" x="5" y="25.5" width="40" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="6CC-Po-6qu"/>
+                            <constraint firstAttribute="height" constant="30" id="Hlb-Dq-KGW"/>
+                        </constraints>
+                        <state key="normal" image="icon_back.png"/>
+                        <connections>
+                            <action selector="onlcickBackBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="1ax-vu-sAD"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JAY-xm-X5r">
+                        <rect key="frame" x="273" y="28.5" width="39" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="39" id="E0F-sS-ltr"/>
+                        </constraints>
+                        <state key="normal" image="r_add.png"/>
+                        <connections>
+                            <action selector="onclickAddBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="S3O-3D-un1"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGH-Td-oXA">
+                        <rect key="frame" x="118" y="27.5" width="74" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="imageEdgeInsets" minX="70" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="为您推荐领队">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="onclickDwonOrUpBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="AMq-i5-7L8"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ds_up.png" translatesAutoresizingMaskIntoConstraints="NO" id="cNc-mz-BsO">
+                        <rect key="frame" x="192" y="36" width="10" height="10"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="cNc-mz-BsO" firstAttribute="centerY" secondItem="fGH-Td-oXA" secondAttribute="centerY" id="4xS-e9-bvN"/>
+                    <constraint firstItem="cNc-mz-BsO" firstAttribute="leading" secondItem="fGH-Td-oXA" secondAttribute="trailing" id="7ta-7D-UFf"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mjc-Nk-Tcw" secondAttribute="bottom" id="IJU-u9-zrt"/>
+                    <constraint firstItem="fGH-Td-oXA" firstAttribute="centerY" secondItem="mjc-Nk-Tcw" secondAttribute="centerY" id="Ycs-k1-bem"/>
+                    <constraint firstItem="JAY-xm-X5r" firstAttribute="centerY" secondItem="mjc-Nk-Tcw" secondAttribute="centerY" id="aI9-jv-rMa"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="JAY-xm-X5r" secondAttribute="trailing" id="ffx-jA-Buk"/>
+                    <constraint firstItem="mjc-Nk-Tcw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="hX1-1z-YmM"/>
+                    <constraint firstItem="mjc-Nk-Tcw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="17.5" id="kIk-Mz-bTe"/>
+                    <constraint firstItem="fGH-Td-oXA" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-5" id="vmd-iT-Zfa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btn_status" destination="fGH-Td-oXA" id="FHY-I4-4Bp"/>
+            </connections>
+            <point key="canvasLocation" x="32" y="80"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ds_up.png" width="10" height="10"/>
+        <image name="icon_back.png" width="20" height="22"/>
+        <image name="r_add.png" width="19" height="25"/>
+    </resources>
+</document>

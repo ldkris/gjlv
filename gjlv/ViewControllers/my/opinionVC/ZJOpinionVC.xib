@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZJOpinionVC">
+            <connections>
+                <outlet property="btn_sub" destination="CrZ-IZ-aMP" id="UGC-Lb-9YG"/>
+                <outlet property="tf_input" destination="Vda-dl-7pt" id="RF0-Fp-pvC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Vda-dl-7pt" customClass="PlaceholderTextView">
+                    <rect key="frame" x="13" y="13" width="349" height="374"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="PtB-at-MvC"/>
+                    </connections>
+                </textView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xar-xa-G3w">
+                    <rect key="frame" x="13" y="387" width="349" height="1"/>
+                    <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="wBc-uG-eqZ"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CrZ-IZ-aMP">
+                    <rect key="frame" x="157" y="428" width="46" height="30"/>
+                    <color key="backgroundColor" red="0.91372549020000005" green="0.72549019609999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="Ybd-QQ-LtN"/>
+                    </constraints>
+                    <state key="normal" title="提交">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onclickSubmitBtn:" destination="-1" eventType="touchUpInside" id="dGD-j0-WOk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xar-xa-G3w" secondAttribute="trailing" constant="13" id="85a-dH-BCl"/>
+                <constraint firstItem="Vda-dl-7pt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="13" id="8UD-Cs-pwx"/>
+                <constraint firstItem="CrZ-IZ-aMP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="13" id="Abo-KK-z4U"/>
+                <constraint firstItem="xar-xa-G3w" firstAttribute="top" secondItem="Vda-dl-7pt" secondAttribute="bottom" id="FX4-cN-Ns2"/>
+                <constraint firstItem="xar-xa-G3w" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="13" id="OYt-Xu-JQB"/>
+                <constraint firstAttribute="trailing" secondItem="CrZ-IZ-aMP" secondAttribute="trailing" constant="13" id="Rkv-VD-bwu"/>
+                <constraint firstItem="CrZ-IZ-aMP" firstAttribute="top" secondItem="Vda-dl-7pt" secondAttribute="bottom" constant="41" id="Weh-Np-3vs"/>
+                <constraint firstItem="Vda-dl-7pt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="13" id="tNx-om-abi"/>
+                <constraint firstAttribute="trailing" secondItem="Vda-dl-7pt" secondAttribute="trailing" constant="13" id="wpy-At-HHy"/>
+                <constraint firstAttribute="bottom" secondItem="Vda-dl-7pt" secondAttribute="bottom" constant="280" id="xlD-Pv-Cbb"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

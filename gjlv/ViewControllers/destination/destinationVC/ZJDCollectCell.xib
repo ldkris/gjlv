@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ZJDCollectCell">
+            <rect key="frame" x="0.0" y="0.0" width="137" height="101"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="137" height="101"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d_default.png" translatesAutoresizingMaskIntoConstraints="NO" id="m3n-lT-5nE"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="感受别一番风情" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xwp-qG-t62">
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="重庆" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfq-X8-zcj">
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d_mark_hot.png" translatesAutoresizingMaskIntoConstraints="NO" id="SIL-kb-YcV">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="L6t-I4-nPh"/>
+                            <constraint firstAttribute="width" constant="40" id="mS6-dn-eTU"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="xwp-qG-t62" firstAttribute="top" secondItem="vfq-X8-zcj" secondAttribute="bottom" constant="1" id="Bdn-o5-tKi"/>
+                <constraint firstItem="xwp-qG-t62" firstAttribute="centerX" secondItem="m3n-lT-5nE" secondAttribute="centerX" id="LJ7-Ul-C16"/>
+                <constraint firstAttribute="bottom" secondItem="m3n-lT-5nE" secondAttribute="bottom" id="N1R-Fe-IvI"/>
+                <constraint firstAttribute="trailing" secondItem="m3n-lT-5nE" secondAttribute="trailing" id="PHt-dE-MJ2"/>
+                <constraint firstItem="SIL-kb-YcV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Xr4-Ma-6JK"/>
+                <constraint firstItem="m3n-lT-5nE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="edB-vP-xBw"/>
+                <constraint firstItem="xwp-qG-t62" firstAttribute="centerY" secondItem="m3n-lT-5nE" secondAttribute="centerY" constant="10" id="jeU-g4-ASF"/>
+                <constraint firstItem="vfq-X8-zcj" firstAttribute="centerX" secondItem="xwp-qG-t62" secondAttribute="centerX" id="mbv-fb-s0p"/>
+                <constraint firstItem="m3n-lT-5nE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="p5c-U1-N0G"/>
+                <constraint firstItem="SIL-kb-YcV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zfO-Hj-mqK"/>
+            </constraints>
+            <size key="customSize" width="137" height="101"/>
+            <point key="canvasLocation" x="-35.5" y="118.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="d_default.png" width="429" height="210"/>
+        <image name="d_mark_hot.png" width="76" height="33"/>
+    </resources>
+</document>

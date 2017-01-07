@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZJGuideVC">
+            <connections>
+                <outlet property="mBtnView" destination="4gi-MI-6RP" id="28V-nl-5HO"/>
+                <outlet property="mContentView" destination="wtP-jn-mO4" id="bXH-tS-cjz"/>
+                <outlet property="view" destination="iN0-l3-epB" id="MVJ-V5-cSe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gi-MI-6RP">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <color key="backgroundColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="QYU-G2-LEb"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="l_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="rN4-me-NFx">
+                    <rect key="frame" x="13" y="73" width="349" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="W9B-lT-DIi"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d_search.png" translatesAutoresizingMaskIntoConstraints="NO" id="zGd-ZX-Kwf">
+                    <rect key="frame" x="24" y="84" width="20" height="19"/>
+                </imageView>
+                <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="搜索" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="teO-Bx-LMq">
+                    <rect key="frame" x="52" y="73" width="310" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="hno-YG-Gqg"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wtP-jn-mO4">
+                    <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                    <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zGd-ZX-Kwf" firstAttribute="centerY" secondItem="rN4-me-NFx" secondAttribute="centerY" id="5X6-rV-HVG"/>
+                <constraint firstAttribute="trailing" secondItem="4gi-MI-6RP" secondAttribute="trailing" id="82x-Kn-6hu"/>
+                <constraint firstItem="teO-Bx-LMq" firstAttribute="centerY" secondItem="zGd-ZX-Kwf" secondAttribute="centerY" id="8Ya-EX-tYZ"/>
+                <constraint firstItem="teO-Bx-LMq" firstAttribute="leading" secondItem="zGd-ZX-Kwf" secondAttribute="trailing" constant="8" id="Bte-K5-NjN"/>
+                <constraint firstAttribute="trailing" secondItem="rN4-me-NFx" secondAttribute="trailing" constant="13" id="ESW-Kq-NL0"/>
+                <constraint firstItem="rN4-me-NFx" firstAttribute="top" secondItem="4gi-MI-6RP" secondAttribute="bottom" constant="13" id="EXO-eX-Z6t"/>
+                <constraint firstItem="wtP-jn-mO4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="JJn-PA-4nE"/>
+                <constraint firstItem="4gi-MI-6RP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LSs-lG-8PB"/>
+                <constraint firstAttribute="trailing" secondItem="wtP-jn-mO4" secondAttribute="trailing" id="UxD-tP-kXR"/>
+                <constraint firstItem="4gi-MI-6RP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Xid-f7-Jag"/>
+                <constraint firstAttribute="bottom" secondItem="wtP-jn-mO4" secondAttribute="bottom" id="ZaM-6m-WBO"/>
+                <constraint firstItem="rN4-me-NFx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="cCD-ET-Dz7"/>
+                <constraint firstAttribute="trailing" secondItem="teO-Bx-LMq" secondAttribute="trailing" constant="13" id="lEk-Wh-jnV"/>
+                <constraint firstItem="zGd-ZX-Kwf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="nki-FH-Bb8"/>
+                <constraint firstItem="wtP-jn-mO4" firstAttribute="top" secondItem="4gi-MI-6RP" secondAttribute="bottom" id="pVx-rP-XWC"/>
+            </constraints>
+            <point key="canvasLocation" x="37" y="89"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="d_search.png" width="20" height="19"/>
+        <image name="l_bg.png" width="571" height="75"/>
+    </resources>
+</document>

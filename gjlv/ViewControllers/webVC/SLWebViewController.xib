@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SLWebViewController">
+            <connections>
+                <outlet property="mWebView" destination="Pch-p8-crB" id="1Nj-3r-rwc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pch-p8-crB">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Pch-p8-crB" secondAttribute="bottom" id="72l-Bm-GMd"/>
+                <constraint firstItem="Pch-p8-crB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gYo-dF-CyC"/>
+                <constraint firstItem="Pch-p8-crB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="hsL-SC-wAU"/>
+                <constraint firstAttribute="trailing" secondItem="Pch-p8-crB" secondAttribute="trailing" id="woA-HV-c8Z"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Pch-p8-crB"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="72l-Bm-GMd"/>
+                    <exclude reference="gYo-dF-CyC"/>
+                    <exclude reference="hsL-SC-wAU"/>
+                    <exclude reference="woA-HV-c8Z"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Pch-p8-crB"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="72l-Bm-GMd"/>
+                    <include reference="gYo-dF-CyC"/>
+                    <include reference="hsL-SC-wAU"/>
+                    <include reference="woA-HV-c8Z"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>

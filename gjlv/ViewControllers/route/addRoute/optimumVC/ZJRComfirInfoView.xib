@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="HdC-UQ-Twm" customClass="ZJRComfirInfoView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iMI-Jf-9dm">
+                    <rect key="frame" x="30" y="133.5" width="315" height="300"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w5T-Ug-Qja">
+                            <rect key="frame" x="0.0" y="245" width="157.5" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="0Yi-aN-ao7"/>
+                            </constraints>
+                            <state key="normal" title="取消">
+                                <color key="titleColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onclickCancelBtn:" destination="HdC-UQ-Twm" eventType="touchUpInside" id="9rN-pT-hxh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fhs-20-Uhv">
+                            <rect key="frame" x="157.5" y="245" width="157.5" height="55"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="XZF-Io-9Fd"/>
+                            </constraints>
+                            <state key="normal" title="确认">
+                                <color key="titleColor" red="0.91372549020000005" green="0.72549019609999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onclickComfirBtn:" destination="HdC-UQ-Twm" eventType="touchUpInside" id="0uU-hp-tk0"/>
+                            </connections>
+                        </button>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Fhf-ry-cIY">
+                            <rect key="frame" x="0.0" y="13" width="315" height="232"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.23238255029999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="w5T-Ug-Qja" secondAttribute="trailing" id="2tW-VQ-E1h"/>
+                        <constraint firstAttribute="bottom" secondItem="w5T-Ug-Qja" secondAttribute="bottom" id="C5T-NW-nYc"/>
+                        <constraint firstItem="fhs-20-Uhv" firstAttribute="top" secondItem="Fhf-ry-cIY" secondAttribute="bottom" id="CFR-kh-QIH"/>
+                        <constraint firstItem="Fhf-ry-cIY" firstAttribute="leading" secondItem="iMI-Jf-9dm" secondAttribute="leading" id="M2l-ZT-IbA"/>
+                        <constraint firstAttribute="trailing" secondItem="Fhf-ry-cIY" secondAttribute="trailing" id="MZI-Yb-BjX"/>
+                        <constraint firstAttribute="height" constant="300" id="N0x-J2-EQD"/>
+                        <constraint firstAttribute="bottom" secondItem="fhs-20-Uhv" secondAttribute="bottom" id="VZ8-Ws-U02"/>
+                        <constraint firstItem="Fhf-ry-cIY" firstAttribute="top" secondItem="iMI-Jf-9dm" secondAttribute="top" constant="13" id="Yii-IG-mQS"/>
+                        <constraint firstItem="fhs-20-Uhv" firstAttribute="leading" secondItem="w5T-Ug-Qja" secondAttribute="trailing" id="adq-rp-c17"/>
+                        <constraint firstItem="w5T-Ug-Qja" firstAttribute="leading" secondItem="iMI-Jf-9dm" secondAttribute="leading" id="bHY-4F-re7"/>
+                        <constraint firstAttribute="trailing" secondItem="fhs-20-Uhv" secondAttribute="trailing" id="dNm-h8-wZs"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPF-qI-QYp">
+                    <rect key="frame" x="335" y="118.5" width="21" height="22"/>
+                    <state key="normal" image="c_close.png"/>
+                    <connections>
+                        <action selector="onclickCloseBtn:" destination="HdC-UQ-Twm" eventType="touchUpInside" id="0Yh-0D-rhW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="gPF-qI-QYp" firstAttribute="bottom" secondItem="iMI-Jf-9dm" secondAttribute="top" constant="7" id="I4K-mR-o5S"/>
+                <constraint firstItem="iMI-Jf-9dm" firstAttribute="centerY" secondItem="HdC-UQ-Twm" secondAttribute="centerY" constant="-50" id="MQz-sU-CnA"/>
+                <constraint firstItem="gPF-qI-QYp" firstAttribute="trailing" secondItem="iMI-Jf-9dm" secondAttribute="trailing" constant="11" id="Vgq-kO-D1Z"/>
+                <constraint firstItem="iMI-Jf-9dm" firstAttribute="leading" secondItem="HdC-UQ-Twm" secondAttribute="leading" constant="30" id="i9C-B6-0pK"/>
+                <constraint firstItem="iMI-Jf-9dm" firstAttribute="centerX" secondItem="HdC-UQ-Twm" secondAttribute="centerX" id="jfn-1J-uce"/>
+                <constraint firstAttribute="trailing" secondItem="iMI-Jf-9dm" secondAttribute="trailing" constant="30" id="mLJ-dW-Ike"/>
+            </constraints>
+            <connections>
+                <outlet property="btn_cancel" destination="w5T-Ug-Qja" id="jOL-sb-LdE"/>
+                <outlet property="btn_comfire" destination="fhs-20-Uhv" id="XQr-Ei-l5o"/>
+                <outlet property="mContentView" destination="iMI-Jf-9dm" id="GGy-yf-eW8"/>
+                <outlet property="mInfoTableView" destination="Fhf-ry-cIY" id="f8r-Te-uid"/>
+            </connections>
+            <point key="canvasLocation" x="46" y="66"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="c_close.png" width="21" height="21"/>
+    </resources>
+</document>

@@ -1,0 +1,20 @@
+platform:ios,'8.0'
+target "gjlv" do
+pod 'Mantle'
+pod 'AFNetworking'
+pod 'Masonry'
+pod 'SDWebImage'
+pod 'SVProgressHUD'
+pod 'ImagePlayerView'
+pod 'GTMBase64'
+pod 'Qiniu'
+pod 'Mantle'
+pod 'JPush-iOS-SDK'
+pod 'PopoverView'
+pod 'BaiduMapKit'
+pod 'HyphenateLite_CN'
+pod 'UMengUShare/Social/WeChat'
+pod 'UMengUShare/Social/QQ'
+pod 'UMengUShare/UI’
+pod 'MJRefresh'
+end

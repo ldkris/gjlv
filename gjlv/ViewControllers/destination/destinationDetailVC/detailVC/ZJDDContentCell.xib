@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="111" id="KGk-i7-Jjw" customClass="ZJDDContentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_head_def.png" translatesAutoresizingMaskIntoConstraints="NO" id="jIL-Em-T1J">
+                        <rect key="frame" x="8" y="8" width="52" height="52"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="52" id="Qy2-vy-rcH"/>
+                            <constraint firstAttribute="width" secondItem="jIL-Em-T1J" secondAttribute="height" multiplier="1:1" id="VOe-dt-I2q"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="糖宝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Aq-1v-VoG">
+                        <rect key="frame" x="68" y="8" width="31" height="19"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我到啦~" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0s-Er-mdc">
+                        <rect key="frame" x="68" y="35" width="244" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最佳拍摄" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lo4-YC-fwo">
+                        <rect key="frame" x="68" y="59" width="50" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="7IP-8g-QAO"/>
+                            <constraint firstAttribute="height" constant="18" id="JUI-RT-a4i"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.91372549020000005" green="0.72549019609999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="拍摄于2016-09-01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meB-PA-lvu">
+                        <rect key="frame" x="68" y="85" width="112.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pjp-qS-MEM">
+                        <rect key="frame" x="0.0" y="109" width="320" height="1"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="lBc-gA-1Eo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="pjp-qS-MEM" secondAttribute="bottom" id="0lb-eH-gY0"/>
+                    <constraint firstItem="4Aq-1v-VoG" firstAttribute="leading" secondItem="jIL-Em-T1J" secondAttribute="trailing" constant="8" id="16R-sD-S2n"/>
+                    <constraint firstItem="lo4-YC-fwo" firstAttribute="top" secondItem="a0s-Er-mdc" secondAttribute="bottom" constant="8" id="43A-3d-KdF"/>
+                    <constraint firstItem="a0s-Er-mdc" firstAttribute="top" secondItem="4Aq-1v-VoG" secondAttribute="bottom" constant="8" id="5LO-EL-Jpz"/>
+                    <constraint firstAttribute="trailing" secondItem="pjp-qS-MEM" secondAttribute="trailing" id="UbE-eg-AVZ"/>
+                    <constraint firstItem="lo4-YC-fwo" firstAttribute="leading" secondItem="a0s-Er-mdc" secondAttribute="leading" id="W7J-B2-T6Q"/>
+                    <constraint firstItem="4Aq-1v-VoG" firstAttribute="top" secondItem="jIL-Em-T1J" secondAttribute="top" id="WnQ-mx-Y3D"/>
+                    <constraint firstItem="a0s-Er-mdc" firstAttribute="leading" secondItem="4Aq-1v-VoG" secondAttribute="leading" id="afm-Na-MLO"/>
+                    <constraint firstItem="pjp-qS-MEM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="djK-oA-HOh"/>
+                    <constraint firstItem="meB-PA-lvu" firstAttribute="top" secondItem="lo4-YC-fwo" secondAttribute="bottom" constant="8" id="gWL-OK-88l"/>
+                    <constraint firstItem="jIL-Em-T1J" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="mWL-J0-aIM"/>
+                    <constraint firstItem="jIL-Em-T1J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="qA4-KS-5ku"/>
+                    <constraint firstItem="a0s-Er-mdc" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="rBd-HN-xCC"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="meB-PA-lvu" secondAttribute="bottom" constant="1.5" id="tph-QK-aCW"/>
+                    <constraint firstItem="meB-PA-lvu" firstAttribute="leading" secondItem="lo4-YC-fwo" secondAttribute="leading" id="tzG-62-udZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mimg_head" destination="jIL-Em-T1J" id="eLV-zd-wd6"/>
+                <outlet property="mlab_TakePP" destination="lo4-YC-fwo" id="QXv-bm-T9d"/>
+                <outlet property="mlab_content" destination="a0s-Er-mdc" id="ILi-7h-w7L"/>
+                <outlet property="mlab_name" destination="4Aq-1v-VoG" id="q9B-jZ-41P"/>
+                <outlet property="mlab_time" destination="meB-PA-lvu" id="p3T-Og-5G0"/>
+            </connections>
+            <point key="canvasLocation" x="31" y="92.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="my_head_def.png" width="153" height="150"/>
+    </resources>
+</document>

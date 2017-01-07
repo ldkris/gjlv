@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZJMyVC">
+            <connections>
+                <outlet property="mInfoTableView" destination="8h1-yz-mPn" id="0d8-vi-7DZ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8h1-yz-mPn">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="hbJ-HH-qKA"/>
+                        <outlet property="delegate" destination="-1" id="Cag-Nl-hoh"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8h1-yz-mPn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="I1V-pi-ZKK"/>
+                <constraint firstAttribute="trailing" secondItem="8h1-yz-mPn" secondAttribute="trailing" id="WeV-Ny-17S"/>
+                <constraint firstAttribute="bottom" secondItem="8h1-yz-mPn" secondAttribute="bottom" id="fPe-Mm-zMn"/>
+                <constraint firstItem="8h1-yz-mPn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xIA-X6-q9L"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

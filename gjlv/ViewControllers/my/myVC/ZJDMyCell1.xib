@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="763" id="KGk-i7-Jjw" customClass="ZJDMyCell1">
+            <rect key="frame" x="0.0" y="0.0" width="1086" height="763"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="1086" height="762"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cD5-Rz-iT4">
+                        <rect key="frame" x="0.0" y="0.0" width="94" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="bYL-lq-r04"/>
+                            <constraint firstAttribute="width" secondItem="cD5-Rz-iT4" secondAttribute="height" multiplier="75:64" id="hVC-RQ-Xk5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="titleEdgeInsets" minX="-48" minY="41" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="-14" maxX="-52" maxY="0.0"/>
+                        <state key="normal" title="全部路线" image="my_lx.png">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="onclickAllRoute:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gBB-6l-PSq"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnw-Kl-wbM">
+                        <rect key="frame" x="1016" y="0.0" width="94" height="80"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <inset key="titleEdgeInsets" minX="-48" minY="40" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="-14" maxX="-37" maxY="0.0"/>
+                        <state key="normal" title="待点评 " image="my_ddp.png">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="onclickDCXBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bdd-mp-huS"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aLm-la-QhJ">
+                        <rect key="frame" x="0.0" y="82" width="1109" height="10"/>
+                        <color key="backgroundColor" red="0.8980392157" green="0.8980392157" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="hhy-Dv-KaS"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGA-DU-tYB">
+                        <rect key="frame" x="508" y="0.0" width="94" height="80"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <inset key="titleEdgeInsets" minX="-48" minY="41" maxX="0.0" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="-14" maxX="-39" maxY="0.0"/>
+                        <state key="normal" title="待出行" image="my_dcx.png">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="onclickDDPBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GDh-HO-11M"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znf-PT-dQH">
+                        <rect key="frame" x="560" y="0.0" width="42" height="21"/>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="1sO-O8-TK4"/>
+                            <constraint firstAttribute="width" constant="20" id="Iyt-va-R6c"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="jnw-Kl-wbM" secondAttribute="trailing" id="1Lk-oy-wSl"/>
+                    <constraint firstAttribute="bottom" secondItem="aLm-la-QhJ" secondAttribute="bottom" id="39l-d0-asn"/>
+                    <constraint firstItem="Znf-PT-dQH" firstAttribute="trailing" secondItem="aGA-DU-tYB" secondAttribute="trailing" constant="-25" id="5yo-ok-k75"/>
+                    <constraint firstItem="Znf-PT-dQH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="BKo-Vh-Wie"/>
+                    <constraint firstAttribute="trailing" secondItem="aLm-la-QhJ" secondAttribute="trailing" id="BYE-t4-WNs"/>
+                    <constraint firstItem="aGA-DU-tYB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="CSA-2s-d51"/>
+                    <constraint firstItem="aGA-DU-tYB" firstAttribute="height" secondItem="cD5-Rz-iT4" secondAttribute="height" id="E2i-CI-Anl"/>
+                    <constraint firstItem="jnw-Kl-wbM" firstAttribute="height" secondItem="aGA-DU-tYB" secondAttribute="height" id="ENu-ye-k7K"/>
+                    <constraint firstItem="aGA-DU-tYB" firstAttribute="centerY" secondItem="cD5-Rz-iT4" secondAttribute="centerY" id="KQY-55-fed"/>
+                    <constraint firstItem="cD5-Rz-iT4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="L30-th-CP8"/>
+                    <constraint firstItem="aGA-DU-tYB" firstAttribute="width" secondItem="cD5-Rz-iT4" secondAttribute="width" id="NTe-Mw-Xqe"/>
+                    <constraint firstItem="aLm-la-QhJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="P7O-zI-ez1"/>
+                    <constraint firstItem="jnw-Kl-wbM" firstAttribute="width" secondItem="aGA-DU-tYB" secondAttribute="width" id="RRC-og-rJj"/>
+                    <constraint firstItem="cD5-Rz-iT4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WZV-X0-kJX"/>
+                    <constraint firstItem="jnw-Kl-wbM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="YxV-tf-bQA"/>
+                    <constraint firstItem="aLm-la-QhJ" firstAttribute="top" secondItem="cD5-Rz-iT4" secondAttribute="bottom" constant="2" id="quU-33-EN6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mlab_dcx" destination="Znf-PT-dQH" id="Koc-gl-koA"/>
+            </connections>
+            <point key="canvasLocation" x="300" y="114"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="my_dcx.png" width="37" height="32"/>
+        <image name="my_ddp.png" width="37" height="32"/>
+        <image name="my_lx.png" width="37" height="32"/>
+    </resources>
+</document>

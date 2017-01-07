@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ZJFoodMapCell">
+            <rect key="frame" x="0.0" y="0.0" width="346" height="139"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="346" height="139"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="f_def.png" translatesAutoresizingMaskIntoConstraints="NO" id="sXy-n6-qSU">
+                        <rect key="frame" x="8" y="8" width="123" height="123"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="sXy-n6-qSU" secondAttribute="height" multiplier="1:1" id="r36-C6-ihe"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哈哈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3i-dS-6to">
+                        <rect key="frame" x="141" y="8" width="35" height="20.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距您" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1If-vb-RyE">
+                        <rect key="frame" x="141" y="43.5" width="27" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdy-jU-YzH">
+                        <rect key="frame" x="168" y="40" width="26.5" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.91372549020000005" green="0.72549019609999998" blue="0.41568627450000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="位于丽江市宁蒗彝族自治县泸沽湖..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J30-3b-2gl">
+                        <rect key="frame" x="141" y="74.5" width="192" height="56.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公里" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lv1-SZ-aK2">
+                        <rect key="frame" x="194.5" y="43.5" width="27" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="sXy-n6-qSU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="0qN-XU-dqb"/>
+                <constraint firstItem="J30-3b-2gl" firstAttribute="bottom" secondItem="sXy-n6-qSU" secondAttribute="bottom" id="623-i6-Wka"/>
+                <constraint firstAttribute="trailing" secondItem="J30-3b-2gl" secondAttribute="trailing" constant="13" id="6ed-tU-JRv"/>
+                <constraint firstItem="J30-3b-2gl" firstAttribute="top" secondItem="1If-vb-RyE" secondAttribute="bottom" constant="15" id="E0v-iF-Dwr"/>
+                <constraint firstItem="pdy-jU-YzH" firstAttribute="bottom" secondItem="1If-vb-RyE" secondAttribute="bottom" id="IK3-D4-sBK"/>
+                <constraint firstItem="g3i-dS-6to" firstAttribute="top" secondItem="sXy-n6-qSU" secondAttribute="top" id="K44-Ru-T3p"/>
+                <constraint firstItem="1If-vb-RyE" firstAttribute="leading" secondItem="g3i-dS-6to" secondAttribute="leading" id="MUH-eE-xQs"/>
+                <constraint firstItem="J30-3b-2gl" firstAttribute="leading" secondItem="1If-vb-RyE" secondAttribute="leading" id="Qmw-gH-pWo"/>
+                <constraint firstItem="Lv1-SZ-aK2" firstAttribute="bottom" secondItem="pdy-jU-YzH" secondAttribute="bottom" id="RDd-Uf-hAs"/>
+                <constraint firstItem="g3i-dS-6to" firstAttribute="leading" secondItem="sXy-n6-qSU" secondAttribute="trailing" constant="10" id="U1h-0a-VVh"/>
+                <constraint firstItem="Lv1-SZ-aK2" firstAttribute="leading" secondItem="pdy-jU-YzH" secondAttribute="trailing" id="Xea-JK-UQZ"/>
+                <constraint firstItem="pdy-jU-YzH" firstAttribute="leading" secondItem="1If-vb-RyE" secondAttribute="trailing" id="f3l-CK-IjS"/>
+                <constraint firstItem="sXy-n6-qSU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="uBb-4p-oZM"/>
+                <constraint firstAttribute="bottom" secondItem="sXy-n6-qSU" secondAttribute="bottom" constant="8" id="v7P-5w-bRR"/>
+                <constraint firstItem="1If-vb-RyE" firstAttribute="top" secondItem="g3i-dS-6to" secondAttribute="bottom" constant="15" id="yIF-ZT-nLC"/>
+            </constraints>
+            <size key="customSize" width="346" height="139"/>
+            <connections>
+                <outlet property="mimg_hotel" destination="sXy-n6-qSU" id="hVL-H3-cus"/>
+                <outlet property="mlab_adress" destination="J30-3b-2gl" id="EyO-01-v1L"/>
+                <outlet property="mlab_jl" destination="pdy-jU-YzH" id="xCA-UR-P57"/>
+                <outlet property="mlab_name" destination="g3i-dS-6to" id="AnM-kp-YOG"/>
+            </connections>
+            <point key="canvasLocation" x="26" y="102.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="f_def.png" width="149" height="150"/>
+    </resources>
+</document>
