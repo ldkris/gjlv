@@ -160,6 +160,9 @@
     [_mapView viewWillAppear];
     if (mTrView) {
         mTrView.hidden = NO;
+        [mTrView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.bottom.mas_equalTo(0);
+        }];
     }
     
     if (self.mMyRouteModel1) {
@@ -178,10 +181,6 @@
     _locService.delegate = (id)self;
     _routesearch.delegate = (id)self; // 此处记得不用的时候需要置nil，否则影响内存的释放
     _geocodesearch.delegate = (id)self;
-    
-    [mTrView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.bottom.mas_equalTo(0);
-    }];
 }
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];

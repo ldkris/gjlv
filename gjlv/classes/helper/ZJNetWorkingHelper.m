@@ -8,8 +8,8 @@
 
 #import "ZJNetWorkingHelper.h"
 #define TIMEOUT 30
-//#define BaseUrl @"http://112.74.68.26:8887/"
-#define BaseUrl @"http://192.168.31.185:8887/dt-user/"
+#define BaseUrl @"http://112.74.68.26:8887/"
+//#define BaseUrl @"http://192.168.31.185:8887/dt-user/"
 @implementation ZJNetWorkingHelper
 +(ZJNetWorkingHelper *)shareNetWork{
     static ZJNetWorkingHelper *_sharedClient = nil;
@@ -304,7 +304,7 @@
 -(void)getNearbyUsers:(NSDictionary *)dic SuccessBlock:(SuccessBlock)Success FailureBlock:(FailureBlock)falie{
     NSString *mActionStr = @"user/getNearbyUsers.sl";
     NSString *mUrlStr = [BaseUrl stringByAppendingString:mActionStr];
-    [self basePostUrl:mUrlStr param:dic isShowLoadingView:NO Success:Success failure:falie];
+    [self basePostUrl:mUrlStr param:dic isShowLoadingView:YES Success:Success failure:falie];
 }
 -(void)getWaitTravelCount:(NSDictionary *)dic SuccessBlock:(SuccessBlock)Success FailureBlock:(FailureBlock)falie{
     NSString *mActionStr = @"my/getWaitTravelCount.sl";
