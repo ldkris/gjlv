@@ -182,7 +182,7 @@
     if (([type isEqualToString:(NSString*)kUTTypeImage]&&picker.sourceType==UIImagePickerControllerSourceTypePhotoLibrary) | UIImagePickerControllerSourceTypeSavedPhotosAlbum ) {
         //获取图片裁剪的图
         UIImage* edit = [info objectForKey:UIImagePickerControllerOriginalImage];
-        NSData *imageData = UIImagePNGRepresentation(edit);
+        NSData *imageData = [MyFounctions imageData:edit];//;
         ZJMHeadCell *cell = [self.mInfoTbaleView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
         //模态方式退出uiimagepickercontroller
         [picker dismissViewControllerAnimated:NO completion:^{
@@ -194,7 +194,7 @@
         UIImage* edit = [info objectForKey:UIImagePickerControllerOriginalImage];
         //如果是拍照的照片，则需要手动保存到本地，系统不会自动保存拍照成功后的照片
         UIImageWriteToSavedPhotosAlbum(edit, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
-        NSData *imageData = UIImagePNGRepresentation(edit);
+        NSData *imageData = [MyFounctions imageData:edit];//;
         ZJMHeadCell *cell = [self.mInfoTbaleView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0]];
         //模态方式退出uiimagepickercontroller
         [picker dismissViewControllerAnimated:NO completion:^{

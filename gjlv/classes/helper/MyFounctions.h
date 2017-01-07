@@ -159,4 +159,6 @@
 +(void)callPhone:(NSString *)phoneStr;
 
 +(UIImage *)imageCompressForWidth:(UIImage *)sourceImage targetWidth:(CGFloat)defineWidth;
+
++(NSData *)imageData:(UIImage *)myimage;
 @end
