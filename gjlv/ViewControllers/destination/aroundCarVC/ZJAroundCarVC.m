@@ -213,7 +213,9 @@
 -(void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     int page = (int)(scrollView.contentOffset.x/scrollView.frame.size.width + 0.5)%5;
     LDLOG(@"%d",page);
-    [self setMapAnnotation:self.mDataSoure[page]];
+    if (self.mDataSoure.count>0 && self.mDataSoure.count <= page) {
+        [self setMapAnnotation:self.mDataSoure[page]];
+    }
 }
 #pragma mark UICollectionViewDelegate
 //UICollectionView被选中时调用的方法

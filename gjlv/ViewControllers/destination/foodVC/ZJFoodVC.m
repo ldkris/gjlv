@@ -227,7 +227,9 @@
     LDLOG(@"%d",page);
     _mCurrCollectionCellIndex = page;
     
-    [self setMapAnnotation:self.mDataSoure[page]];
+    if (self.mDataSoure.count>0 && self.mDataSoure.count <= page) {
+        [self setMapAnnotation:self.mDataSoure[page]];
+    }
 }
 #pragma mark UICollectionViewDelegate
 //UICollectionView被选中时调用的方法

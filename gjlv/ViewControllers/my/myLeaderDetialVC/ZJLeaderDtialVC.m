@@ -9,7 +9,7 @@
 #import "ZJLeaderDtialVC.h"
 #import "ZJLeaderDtialCell.h"
 #import "ZJLeaderDtial1Cell.h"
-
+#import "ZJChatVC.h"
 #import "ZJMyLeaderCountVC.h"
 #import "ZJAppraiseLeaderVC.h"
 @interface ZJLeaderDtialVC ()
@@ -74,6 +74,15 @@
 #pragma mark event response
 - (IBAction)onclickBackBtn:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
+}
+- (IBAction)onclickChatVc:(id)sender {
+    
+    NSString *phone = _model.mmobile;
+    if(phone){
+        ZJChatVC *viewController = [[ZJChatVC alloc] initWithConversationChatter:[@"leader_" stringByAppendingString:phone] conversationType:EMConversationTypeChat];
+        viewController.title = _model.mnickname;
+        [self.navigationController pushViewController:viewController animated:YES];
+    }
 }
 - (IBAction)onclickShareBtn:(id)sender {
     

@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZJDestinationDetailVC">
             <connections>
+                <outlet property="mBtn_sc" destination="Zu6-DI-o2d" id="Eis-yK-M1T"/>
                 <outlet property="mInfoCollectionView" destination="35k-9N-dY9" id="vaj-ak-icp"/>
                 <outlet property="mNavView" destination="Ymn-y0-Md6" id="GKm-tQ-7fw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -25,7 +26,12 @@
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="35k-9N-dY9">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    <collectionViewLayout key="collectionViewLayout" id="Wg2-fa-GWf" customClass="BaseLayout"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5tQ-w8-xMX">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="72A-MG-pvg"/>
                         <outlet property="delegate" destination="-1" id="9t9-1U-Xow"/>
@@ -57,12 +63,11 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zu6-DI-o2d">
-                            <rect key="frame" x="295" y="26" width="25" height="45"/>
+                            <rect key="frame" x="273" y="22" width="47" height="45"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="JAF-3T-rOl"/>
                             </constraints>
-                            <inset key="imageEdgeInsets" minX="0.0" minY="-6" maxX="0.0" maxY="0.0"/>
-                            <state key="normal" image="a_smark.png"/>
+                            <state key="normal" image="dd_sc.png"/>
                             <connections>
                                 <action selector="onclickShareBtn:" destination="-1" eventType="touchUpInside" id="FcA-Qk-J8p"/>
                             </connections>
@@ -70,17 +75,19 @@
                     </subviews>
                     <constraints>
                         <constraint firstItem="JRl-ze-srM" firstAttribute="width" secondItem="JRl-ze-srM" secondAttribute="height" multiplier="73:70" id="1e5-YT-fQ1"/>
-                        <constraint firstItem="Zu6-DI-o2d" firstAttribute="centerY" secondItem="xjR-FN-pGJ" secondAttribute="centerY" constant="4" id="CfC-zI-hz2"/>
-                        <constraint firstItem="JRl-ze-srM" firstAttribute="centerY" secondItem="xjR-FN-pGJ" secondAttribute="centerY" id="Jvr-cJ-QrD"/>
+                        <constraint firstItem="Zu6-DI-o2d" firstAttribute="height" secondItem="JRl-ze-srM" secondAttribute="height" id="HbS-AE-8sR"/>
+                        <constraint firstItem="Zu6-DI-o2d" firstAttribute="bottom" secondItem="xjR-FN-pGJ" secondAttribute="bottom" id="OtP-VV-hCO"/>
+                        <constraint firstItem="Zu6-DI-o2d" firstAttribute="width" secondItem="JRl-ze-srM" secondAttribute="width" id="QjA-Bi-pG7"/>
                         <constraint firstItem="xjR-FN-pGJ" firstAttribute="top" secondItem="Ymn-y0-Md6" secondAttribute="top" constant="22" id="V7d-Zi-FDJ"/>
                         <constraint firstItem="JRl-ze-srM" firstAttribute="leading" secondItem="Zu6-DI-o2d" secondAttribute="trailing" id="VQ2-Rt-PcY"/>
                         <constraint firstItem="xjR-FN-pGJ" firstAttribute="leading" secondItem="Ymn-y0-Md6" secondAttribute="leading" constant="8" id="by4-H6-AaI"/>
+                        <constraint firstItem="JRl-ze-srM" firstAttribute="bottom" secondItem="Zu6-DI-o2d" secondAttribute="bottom" id="gTJ-Nj-CYO"/>
                         <constraint firstAttribute="height" constant="64" id="olV-oP-AOd"/>
                         <constraint firstAttribute="trailing" secondItem="JRl-ze-srM" secondAttribute="trailing" constant="8" id="roy-mf-Jcx"/>
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gj9-V1-mgo">
-                    <rect key="frame" x="150" y="598" width="75" height="69"/>
+                    <rect key="frame" x="145" y="588" width="85" height="79"/>
                     <state key="normal" image="dd_xj.png"/>
                     <connections>
                         <action selector="onlcikXJBtn:" destination="-1" eventType="touchUpInside" id="xiN-oy-uks"/>
@@ -103,9 +110,9 @@
         </view>
     </objects>
     <resources>
-        <image name="a_smark.png" width="25" height="24"/>
-        <image name="dd_add.png" width="30" height="28"/>
-        <image name="dd_back.png" width="30" height="28"/>
-        <image name="dd_xj.png" width="75" height="69"/>
+        <image name="dd_add.png" width="39" height="37"/>
+        <image name="dd_back.png" width="37" height="36"/>
+        <image name="dd_sc.png" width="37" height="37"/>
+        <image name="dd_xj.png" width="85" height="79"/>
     </resources>
 </document>

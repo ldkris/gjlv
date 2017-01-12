@@ -37,7 +37,7 @@
                                 <action selector="onclickSelectCity:" destination="-1" eventType="touchUpInside" id="BXk-v1-dBL"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9L-zY-Fb5">
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f9L-zY-Fb5">
                             <rect key="frame" x="329" y="30" width="40" height="21.5"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="f9L-zY-Fb5" secondAttribute="height" multiplier="62:33" id="keA-e6-sym"/>

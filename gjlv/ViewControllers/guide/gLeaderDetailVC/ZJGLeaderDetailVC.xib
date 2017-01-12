@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -47,7 +47,7 @@
                                 <action selector="onclickBackBtn:" destination="-1" eventType="touchUpInside" id="Cim-Mz-6iN"/>
                             </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoO-wX-MmT">
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoO-wX-MmT">
                             <rect key="frame" x="315" y="22" width="47" height="45"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="VoO-wX-MmT" secondAttribute="height" multiplier="73:70" id="RzQ-aR-5mY"/>
@@ -114,7 +114,7 @@
         </view>
     </objects>
     <resources>
-        <image name="dd_back.png" width="30" height="28"/>
+        <image name="dd_back.png" width="37" height="36"/>
         <image name="dd_share.png" width="30" height="28"/>
         <image name="f_dh.png" width="20" height="19"/>
         <image name="f_dpBG.png" width="282" height="37"/>

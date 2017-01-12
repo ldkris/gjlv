@@ -21,6 +21,7 @@
 #import "ZJMyVC.h"
 #import "ZJFriendListVC.h"
 #import "ZJGroupListVC.h"
+#import <Bugly/Bugly.h>
 BMKMapManager* _mapManager;
 
 @interface AppDelegate ()<EMClientDelegate,EMChatManagerDelegate,EMContactManagerDelegate,EMGroupManagerDelegate,EMChatroomManagerDelegate>
@@ -88,7 +89,7 @@ BMKMapManager* _mapManager;
     [MyFounctions registerNotificationCompetence];
     // 要使用百度地图，请先启动BaiduMapManager
     _mapManager = [[BMKMapManager alloc]init];
-    
+    [Bugly startWithAppId:@"d0eb0e16a1"];
     _locService = [[BMKLocationService alloc]init];
     _locService.distanceFilter = 1000;
     _locService.delegate = (id)self;
@@ -309,8 +310,6 @@ BMKMapManager* _mapManager;
             }
 //#endif
         }
-        
-        
         
         UITabBarController *mTabVC = (UITabBarController *)self.window.rootViewController;
         for (id tempVC  in mTabVC.viewControllers) {

@@ -17,12 +17,13 @@
 #import "ZJBoarderVC.h"
 #import "ZJDDetailVC.h"
 #import "ZJSendPhotoVC.h"
-
+#import "WaterFlowLayout.h"
 #import <UIKit/UIKit.h>
 @interface ZJDestinationDetailVC ()<UIImagePickerControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIView *mNavView;
 @property (weak, nonatomic) IBOutlet UICollectionView *mInfoCollectionView;
 @property(nonatomic,retain)NSMutableArray *mDataSoure;
+@property (weak, nonatomic) IBOutlet UIButton *mBtn_sc;
 @end
 
 @implementation ZJDestinationDetailVC
@@ -30,6 +31,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    WaterFlowLayout * layout = [[WaterFlowLayout alloc]init];    
+    [self.mInfoCollectionView setCollectionViewLayout:layout];
+    
     // 下拉刷新
     self.mInfoCollectionView.mj_header= [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [self.mDataSoure removeAllObjects];
@@ -117,10 +122,11 @@
 - (IBAction)onclickBackBtn:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
-- (IBAction)onclickShareBtn:(id)sender {
+- (IBAction)onclickShareBtn:(UIButton *)sender {
     NSDictionary *mParamDic = @{@"userId":ZJ_UserID,@"destId":[self.mSelectModel.mdestId stringValue]};
     [[ZJNetWorkingHelper shareNetWork]putDest:mParamDic SuccessBlock:^(id responseBody) {
         ShowMSG(responseBody[@"respMsg"]);
+        sender.enabled = NO;
     } FailureBlock:^(NSError *error) {
         
     }];

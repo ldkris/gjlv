@@ -97,11 +97,14 @@
         ZJSceneDetailModel *tempModel = [MTLJSONAdapter modelOfClass:[ZJSceneDetailModel class] fromJSONDictionary:responseBody error:&error];
         _mSceneDetailModel = tempModel;
         
-        NSIndexSet *secontion = [NSIndexSet indexSetWithIndex:0];
-//        [self.mInfoTableView reloadSections:secontion withRowAnimation:UITableViewRowAnimationNone];
-        [self.mInfoTableView reloadData];
+        // NSIndexSet *secontion = [NSIndexSet indexSetWithIndex:0];
+        //[self.mInfoTableView reloadSections:secontion withRowAnimation:UITableViewRowAnimationNone];
+        //        [self.mInfoTableView reloadData];
         
-      //  [self getSceneCommentList];
+        [_mSecneComms removeAllObjects];
+        self.pageIndex = 1;
+        [self getSceneCommentList];
+        
         if([_mSceneDetailModel.misLike boolValue]){
             [self.mBtn_ZYG setTitle:@"取消点赞" forState:UIControlStateNormal];
         }else{
@@ -155,8 +158,8 @@
                 [self.mInfoTableView.mj_footer endRefreshing];
             }
             self.pageIndex++;
-            NSIndexSet *secontion = [NSIndexSet indexSetWithIndex:1];
-            [self.mInfoTableView reloadSections:secontion withRowAnimation:UITableViewRowAnimationNone];
+          //  NSIndexSet *secontion = [NSIndexSet indexSetWithIndex:1];
+            [self.mInfoTableView reloadData];
         }else{
             [self.mInfoTableView.mj_header endRefreshing];
             [self.mInfoTableView.mj_footer endRefreshing];

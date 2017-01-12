@@ -20,7 +20,7 @@
     self.showRefreshHeader = YES;
     self.delegate = (id)self;
     self.dataSource = (id)self;
-    [self tableViewDidTriggerHeaderRefresh];
+   
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,6 +29,7 @@
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    [self tableViewDidTriggerHeaderRefresh];
     [self refresh];
 }
 #pragma mark - public
@@ -66,7 +67,7 @@
         
         if (model) {
            // if(model.conversation.type ==EMConversationTypeChat){
-                if ([model.title containsString:@"leader_"]) {
+                if ([model.title containsString:@"leader_"] || [model.title containsString:@"service"]) {
                     [mLenderArray addObject:model];
                 }
                 if ([model.title containsString:@"user_"] || model.conversation.type ==EMConversationTypeGroupChat) {

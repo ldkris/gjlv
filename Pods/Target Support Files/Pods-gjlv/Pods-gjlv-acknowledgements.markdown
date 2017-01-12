@@ -50,6 +50,11 @@ SOFTWARE.
 
 
 
+## Bugly
+
+Copyright 2016 tencent.com. All rights reserved.
+
+
 ## GTMBase64
 
 The MIT License (MIT)

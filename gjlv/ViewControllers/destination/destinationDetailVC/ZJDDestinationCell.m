@@ -14,6 +14,8 @@
     [super awakeFromNib];
     // Initialization code
     
+    self.contentView.layer.masksToBounds = YES;
+    self.contentView.layer.cornerRadius = 3.0f;
     self.mlab_name.text = @"";
     self.mlab_time.text = @"";
 }
